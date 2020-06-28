@@ -1,3 +1,4 @@
+// Модальное окно
 .backdrop {
 	position: fixed;
 	top: 0;
@@ -61,11 +62,12 @@
 	font-size: 14px;
 	line-height: 1.14px;
 	letter-spacing: 0.01em;
+	&:hover,
+	&:focus {
+		color: $accent-color;
+	}
 }
-.form-label:hover,
-.form-label:focus {
-	color: $accent-color;
-}
+
 .icon-modal {
 	position: absolute;
 
@@ -75,18 +77,20 @@
 }
 
 .form-field:focus-within > .icon-modal {
-	fill: #2196f3;
+	fill: $accent-color;
 }
 .form-field:focus-within > .form-label {
 	top: -10px;
 	left: 19px;
-	color: #2196f3;
+	color: $accent-color;
 }
 
-.form-field:hover .form-input,
-.form-field:focus .form-input {
-	border: 1px solid #2196f3;
-	outline: none;
+.form-field:hover,
+.form-field:focus {
+	.form-input {
+		border: 1px solid $accent-color;
+		outline: none;
+	}
 }
 
 .form-input:not(:placeholder-shown) + .form-label {
@@ -120,7 +124,7 @@
 	line-height: 1.88;
 	text-align: center;
 	letter-spacing: 0.06em;
-	color: #fff;
+	color: $reverse-color;
 	cursor: pointer;
 }
 .checkbox-text {
@@ -142,19 +146,19 @@
 	border: 2px solid #212121;
 }
 .checkbox:checked + .icon-check {
-	border-color: #2196f3;
-	background-color: #2196f3;
+	border-color: $accent-color;
+	background-color: $accent-color;
 	background-image: url(../images/check.svg);
 	background-size: contain;
 	background-origin: border-box;
 }
 .contract {
 	text-decoration: underline;
-	color: #2196f3;
+	color: $accent-color;
 	font-family: Roboto, sans-serif;
 	font-size: 14px;
 	font-weight: 400;
-	text-align: center;
+	text-align: right;
 	line-height: 1.71;
 	letter-spacing: 0.03em;
 }
@@ -168,14 +172,15 @@
 	height: 30px;
 	border-radius: 50%;
 	border: 1px solid rgba(0, 0, 0, 0.1);
-	background-color: #fff;
+	background-color: $reverse-color;
 	outline: none;
 	cursor: pointer;
+	&:hover,
+	&:focus {
+		fill: $accent-color;
+	}
 }
-.close:hover,
-.close:focus {
-	fill: #2196f3;
-}
+
 .icon-close {
 	width: 11px;
 	height: 11px;

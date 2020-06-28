@@ -1,7 +1,7 @@
 body {
 	margin: 0;
-	background-color: $reverse-color;
-	color: $title-color;
+	// background-color: $reverse-color;
+	// color: $title-color;
 	font-family: Roboto, sans-serif;
 }
 
@@ -23,32 +23,21 @@ img {
 .text {
 	margin-top: 0;
 	margin-bottom: 0;
-	color: $primery-color;
+	// color: $primery-color;
 	font-weight: 400;
 	font-size: 14px;
 	line-height: 1.71;
 	letter-spacing: 0.03em;
 }
 
-.white-font {
-	color: $reverse-color;
-}
-.revtext-color {
-	color: $reverse-color;
-	font-family: Raleway, sans-serif;
-	font-size: 22px;
-	line-height: 1.18;
-	letter-spacing: 0.03em;
-}
-.back-hero-color {
-	background-color: rgba(47, 48, 58, 0.8);
-}
-.back-zone-color {
-	background-color: #f5f4fa;
-}
-.footer {
-	background-color: #2f303a;
-}
+// .back-hero-color {
+// 	background-color: rgba(47, 48, 58, 0.8);
+// }
+
+// }
+// .footer {
+// 	background-color: #2f303a;
+// }
 .container {
 	padding-left: 15px;
 	padding-right: 15px;
